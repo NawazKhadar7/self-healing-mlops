@@ -1,0 +1,41 @@
+{
+  "checks": {
+    "accounted": {
+      "equals": true
+    },
+    "baseline_accuracy": {
+      "equals": 0
+    },
+    "candidate_accuracy": {
+      "max": 1,
+      "min": 0
+    },
+    "clean": {
+      "equals": 16
+    },
+    "isolated_job": {
+      "equals": true
+    },
+    "ks_statistic": {
+      "max": 1,
+      "min": 0
+    },
+    "missing": {
+      "equals": 0
+    },
+    "promotion_safe": {
+      "equals": true
+    },
+    "quality_failure": {
+      "equals": true
+    },
+    "received": {
+      "equals": 16
+    },
+    "retraining_triggered": {
+      "equals": true
+    }
+  },
+  "rationale": "The quality failure starts an isolated retraining job.",
+  "synthetic": true
+}

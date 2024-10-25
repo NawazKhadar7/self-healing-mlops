@@ -1,0 +1,41 @@
+{
+  "checks": {
+    "accounted": {
+      "equals": true
+    },
+    "baseline_accuracy": {
+      "equals": 0
+    },
+    "candidate_accuracy": {
+      "max": 1,
+      "min": 0
+    },
+    "clean": {
+      "equals": 0
+    },
+    "isolated_job": {
+      "equals": false
+    },
+    "ks_statistic": {
+      "max": 1,
+      "min": 0
+    },
+    "missing": {
+      "equals": 1
+    },
+    "promoted": {
+      "equals": false
+    },
+    "promotion_safe": {
+      "equals": true
+    },
+    "received": {
+      "equals": 1
+    },
+    "retraining_triggered": {
+      "equals": false
+    }
+  },
+  "rationale": "No clean samples remain and retraining cannot start.",
+  "synthetic": true
+}

@@ -1,0 +1,19 @@
+{
+  "checks": {
+    "accounted": {
+      "equals": true
+    },
+    "candidate_accuracy": {
+      "max": 1,
+      "min": 0
+    },
+    "promotion_safe": {
+      "equals": true
+    },
+    "received": {
+      "equals": 64
+    }
+  },
+  "rationale": "Shift the feature mean and check the KS monitor.",
+  "synthetic": true
+}

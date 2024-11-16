@@ -1,0 +1,14 @@
+{
+  "counters": [
+    "received",
+    "clean",
+    "missing",
+    "retraining_triggered",
+    "promoted"
+  ],
+  "gauges": [
+    "ks_statistic",
+    "candidate_accuracy",
+    "baseline_accuracy"
+  ]
+}

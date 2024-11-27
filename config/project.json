@@ -1,0 +1,47 @@
+{
+  "algorithm": "Merge sorted empirical distributions to compute maximum CDF distance. Train logistic regression with batch gradient descent. Promote only when held-out accuracy meets .7 and does not fall below the existing model on the same holdout.",
+  "architecture": "Incoming batch \u2192 cleaning/missingness \u2192 KS and accuracy monitor \u2192 policy \u2192 isolated trainer \u2192 held-out gate \u2192 atomic registry.",
+  "data_model": "Rows = numeric feature and binary label. Monitor output records sample counts, D statistic, approximate threshold, trigger, job and promotion decisions.",
+  "description": "Distribution monitoring, quality gates and isolated local retraining with holdout-controlled model promotion.",
+  "design": "Missingness stops automatic training rather than silently learning from badly corrupted inputs. Label changes can trigger retraining independently of feature drift. Cloud adapter design is documented separately.",
+  "families": [
+    "stable",
+    "mean-shift",
+    "variance-shift",
+    "missing",
+    "label-flip",
+    "small-batch"
+  ],
+  "family_notes": [
+    "Observe sampling variation on the reference distribution.",
+    "Shift the feature mean and check the KS monitor.",
+    "Increase feature variance and test drift detection.",
+    "Reject batches with too many missing values from retraining.",
+    "Detect performance degradation even with unchanged feature distribution.",
+    "Use a minimum-sample policy and disable automatic retraining for this diagnostic profile."
+  ],
+  "file_count": 165,
+  "limitations": "No cloud jobs, MLflow service or production metrics backend. KS threshold is approximate, not an exact p-value, and repeated testing requires false-alarm control. The reference is a one-feature classifier. Holdout sets are small; promotion accuracy is illustrative, not a clinical or business acceptance standard.",
+  "numpy": false,
+  "operations": "Use trusted batches only. Track drift windows and delayed labels. The subprocess is job separation, not a security sandbox. Cloud credentials and service provisioning are intentionally not assumed.",
+  "scope": "Two-sample KS statistic, asymptotic threshold, missingness gate, simple logistic training in a subprocess, held-out accuracy comparison and checksummed atomic local registry.",
+  "security": "Treat this as educational code; review it before handling trusted data.",
+  "sizes": [
+    16,
+    24,
+    32,
+    48,
+    64,
+    96
+  ],
+  "slug": "self-healing-mlops",
+  "title": "Self-Healing MLOps Pipeline",
+  "topics": [
+    "mlops",
+    "drift-detection",
+    "retraining",
+    "model-monitoring",
+    "systems"
+  ],
+  "workload_count": 36
+}

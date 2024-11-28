@@ -1,0 +1,22 @@
+{
+  "metrics": {
+    "accounted": true,
+    "baseline_accuracy": 1.0,
+    "candidate_accuracy": 1.0,
+    "clean": 16,
+    "drift_detected": false,
+    "isolated_job": false,
+    "ks_statistic": 0.132812,
+    "missing": 0,
+    "promoted": false,
+    "promotion_safe": true,
+    "quality_failure": false,
+    "received": 16,
+    "retraining_triggered": false
+  },
+  "output": {
+    "execution": "local subprocess, no cloud job",
+    "minimum_clean_samples": 16,
+    "threshold_approximate": 0.4315888899377559
+  }
+}

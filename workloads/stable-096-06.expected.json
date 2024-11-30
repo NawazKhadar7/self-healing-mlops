@@ -1,0 +1,19 @@
+{
+  "checks": {
+    "accounted": {
+      "equals": true
+    },
+    "candidate_accuracy": {
+      "max": 1,
+      "min": 0
+    },
+    "promotion_safe": {
+      "equals": true
+    },
+    "received": {
+      "equals": 96
+    }
+  },
+  "rationale": "Observe sampling variation on the reference distribution.",
+  "synthetic": true
+}

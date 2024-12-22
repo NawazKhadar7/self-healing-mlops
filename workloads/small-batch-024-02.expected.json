@@ -1,0 +1,22 @@
+{
+  "checks": {
+    "accounted": {
+      "equals": true
+    },
+    "candidate_accuracy": {
+      "max": 1,
+      "min": 0
+    },
+    "promotion_safe": {
+      "equals": true
+    },
+    "received": {
+      "equals": 24
+    },
+    "retraining_triggered": {
+      "equals": false
+    }
+  },
+  "rationale": "Use a minimum-sample policy and disable automatic retraining for this diagnostic profile.",
+  "synthetic": true
+}

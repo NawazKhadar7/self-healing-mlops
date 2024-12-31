@@ -1,0 +1,41 @@
+{
+  "checks": {
+    "accounted": {
+      "equals": true
+    },
+    "baseline_accuracy": {
+      "equals": 0
+    },
+    "candidate_accuracy": {
+      "max": 1,
+      "min": 0
+    },
+    "clean": {
+      "equals": 15
+    },
+    "isolated_job": {
+      "equals": false
+    },
+    "ks_statistic": {
+      "max": 1,
+      "min": 0
+    },
+    "missing": {
+      "equals": 0
+    },
+    "promoted": {
+      "equals": false
+    },
+    "promotion_safe": {
+      "equals": true
+    },
+    "received": {
+      "equals": 15
+    },
+    "retraining_triggered": {
+      "equals": false
+    }
+  },
+  "rationale": "Quality failure cannot bypass the minimum sample gate.",
+  "synthetic": true
+}

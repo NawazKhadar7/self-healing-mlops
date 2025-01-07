@@ -1,0 +1,32 @@
+{
+  "checks": {
+    "accounted": {
+      "equals": true
+    },
+    "baseline_accuracy": {
+      "equals": 1
+    },
+    "candidate_accuracy": {
+      "max": 1,
+      "min": 0
+    },
+    "clean": {
+      "equals": 63
+    },
+    "ks_statistic": {
+      "max": 1,
+      "min": 0
+    },
+    "missing": {
+      "equals": 0
+    },
+    "promotion_safe": {
+      "equals": true
+    },
+    "received": {
+      "equals": 63
+    }
+  },
+  "rationale": "Observe the KS decision while preserving promotion safety.",
+  "synthetic": true
+}

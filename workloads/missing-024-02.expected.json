@@ -1,0 +1,22 @@
+{
+  "checks": {
+    "accounted": {
+      "equals": true
+    },
+    "candidate_accuracy": {
+      "max": 1,
+      "min": 0
+    },
+    "promotion_safe": {
+      "equals": true
+    },
+    "received": {
+      "equals": 24
+    },
+    "retraining_triggered": {
+      "equals": false
+    }
+  },
+  "rationale": "Reject batches with too many missing values from retraining.",
+  "synthetic": true
+}

@@ -1,0 +1,41 @@
+{
+  "checks": {
+    "accounted": {
+      "equals": true
+    },
+    "baseline_accuracy": {
+      "equals": 1
+    },
+    "candidate_accuracy": {
+      "max": 1,
+      "min": 0
+    },
+    "clean": {
+      "equals": 11
+    },
+    "isolated_job": {
+      "equals": false
+    },
+    "ks_statistic": {
+      "max": 1,
+      "min": 0
+    },
+    "missing": {
+      "equals": 6
+    },
+    "promoted": {
+      "equals": false
+    },
+    "promotion_safe": {
+      "equals": true
+    },
+    "received": {
+      "equals": 17
+    },
+    "retraining_triggered": {
+      "equals": false
+    }
+  },
+  "rationale": "Six missing rows leave eleven clean rows and prevent retraining.",
+  "synthetic": true
+}
